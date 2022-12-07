@@ -24,7 +24,24 @@
 	<script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script> 
         base_url = 'index.html';
-    </script>	</head>
+    </script>
+<script>
+	var isNS = (navigator.appName == "PN") ? 1 : 0;
+	if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+	function mischandler(){
+	return false;
+	}
+	function mousehandler(e){
+	var myevent = (isNS) ? e : event;
+	var eventbutton = (isNS) ? myevent.which : myevent.button;
+	if((eventbutton==2)||(eventbutton==3)) return false;
+	}
+	document.oncontextmenu = mischandler;
+	document.onmousedown = mousehandler;
+	document.onmouseup = mousehandler;
+	</script>
+
+</head>
 <div class="page-wraper">
 	<div class="silder-for">
 		<div class="swiper-container main-silder-swiper-04">
