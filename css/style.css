@@ -8385,7 +8385,7 @@ li {
 a {
   text-decoration: none;
   outline: none;
-  color: var(--primary);
+  color: var(--secondary);
   -webkit-transition: all 0.8s;
   -ms-transition: all 0.8s;
   transition: all 0.8s; }
