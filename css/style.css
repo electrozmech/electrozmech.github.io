@@ -10374,7 +10374,7 @@ button:focus {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     padding-bottom: 6px;
-    border-bottom: 3px solid var(--primary); }
+    border-bottom: 3px solid var(--primaryblack); }
 
 .btn-outline-primary {
   color: var(--primary);
@@ -12044,7 +12044,7 @@ ul.grid-2 {
 
 .scroltop {
   box-shadow: -4px 4px 24px -10px var(--primary) !important;
-  background: var(--primary);
+  background: var(--primaryblack);
   border-color: var(--primary);
   border-style: solid;
   border-width: 0;
